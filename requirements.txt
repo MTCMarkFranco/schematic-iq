@@ -1,0 +1,8 @@
+openai>=1.0.0
+azure-ai-projects>=2.0.0
+azure-identity
+python-dotenv
+rich
+opencv-python-headless>=4.8.0
+numpy
+PyMuPDF

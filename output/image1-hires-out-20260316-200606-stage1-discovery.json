@@ -1,0 +1,196 @@
+{
+  "components": [
+    {
+      "label": "RA",
+      "position": "middle-left",
+      "left_side_labels": [],
+      "right_side_terminals": []
+    },
+    {
+      "label": "N",
+      "position": "middle-left",
+      "left_side_labels": [],
+      "right_side_terminals": []
+    }
+  ],
+  "cables": [
+    {
+      "label": "N8000",
+      "position": "middle-left",
+      "adjacent_labels": [
+        "RA 530",
+        "4C"
+      ],
+      "off_page_connector": null
+    },
+    {
+      "label": "N7888",
+      "position": "middle-left",
+      "adjacent_labels": [
+        "RA 506B",
+        "4C"
+      ],
+      "off_page_connector": null
+    },
+    {
+      "label": "N6000",
+      "position": "bottom-left",
+      "adjacent_labels": [
+        "RA 500B",
+        "4C"
+      ],
+      "off_page_connector": null
+    },
+    {
+      "label": "N 8000",
+      "position": "middle-left",
+      "adjacent_labels": [
+        "RA 530"
+      ],
+      "off_page_connector": null
+    },
+    {
+      "label": "N 7888",
+      "position": "middle-left",
+      "adjacent_labels": [
+        "RA 506B"
+      ],
+      "off_page_connector": null
+    },
+    {
+      "label": "N 6000",
+      "position": "middle-left",
+      "adjacent_labels": [
+        "RA 500B"
+      ],
+      "off_page_connector": null
+    }
+  ],
+  "terminals": [
+    {
+      "label": "654",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "653",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "652",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "651",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "964",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "963",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "962",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "961",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "960",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "959",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "958",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "957",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "956",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "955",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": true
+    },
+    {
+      "label": "954",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "953",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "952",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "951",
+      "position": "middle-right",
+      "terminal_block": "TB1",
+      "has_slider": false
+    }
+  ],
+  "wire_labels": [
+    "B",
+    "BK",
+    "R",
+    "W",
+    "b",
+    "n",
+    "r",
+    "w"
+  ],
+  "other_symbols": [],
+  "partition_labels": [
+    "MOUNT ON LEFT SIDE",
+    "REAR VIEW"
+  ],
+  "has_crossovers": true,
+  "notes": "The diagram shows multiple parallel vertical lines indicating potential crossover points."
+}

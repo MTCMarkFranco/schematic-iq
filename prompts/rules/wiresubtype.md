@@ -1,0 +1,2 @@
+WIRE_TYPE CABLE_WIRE:
+  Connects a CABLE to a TERMINAL
