@@ -36,6 +36,7 @@ from services.agent_extraction_service import run_agent_extraction
 from services.validation_service import post_process_and_validate
 from services.telemetry import get_logger, configure_logging, PipelineMetrics
 from services.errors import PipelineError, Stage1Error, Stage2Error, Stage3Error
+from services.pipeline.modes import PipelineMode
 
 # ── Initialization ───────────────────────────────────────────────────────────
 load_dotenv()
@@ -67,11 +68,15 @@ def parse_arguments():
     # Configure structured logging from --log-level / --json-log flags
     log_level = "WARNING"
     json_log = False
+    pipeline_mode = None
     for a in sys.argv[1:]:
         if a.startswith("--log-level="):
             log_level = a.split("=", 1)[1]
         elif a == "--json-log":
             json_log = True
+        elif a.startswith("--pipeline-mode="):
+            mode_val = a.split("=", 1)[1].lower()
+            pipeline_mode = PipelineMode(mode_val)
     configure_logging(level=log_level, json_output=json_log)
 
     return image_path
