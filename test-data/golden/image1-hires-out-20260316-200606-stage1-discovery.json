@@ -1,0 +1,196 @@
+{
+  "cables": [
+    {
+      "adjacent_labels": [
+        "RA 500B"
+      ],
+      "label": "N 6000",
+      "off_page_connector": null,
+      "position": "middle-left"
+    },
+    {
+      "adjacent_labels": [
+        "RA 506B"
+      ],
+      "label": "N 7888",
+      "off_page_connector": null,
+      "position": "middle-left"
+    },
+    {
+      "adjacent_labels": [
+        "RA 530"
+      ],
+      "label": "N 8000",
+      "off_page_connector": null,
+      "position": "middle-left"
+    },
+    {
+      "adjacent_labels": [
+        "4C",
+        "RA 500B"
+      ],
+      "label": "N6000",
+      "off_page_connector": null,
+      "position": "bottom-left"
+    },
+    {
+      "adjacent_labels": [
+        "4C",
+        "RA 506B"
+      ],
+      "label": "N7888",
+      "off_page_connector": null,
+      "position": "middle-left"
+    },
+    {
+      "adjacent_labels": [
+        "4C",
+        "RA 530"
+      ],
+      "label": "N8000",
+      "off_page_connector": null,
+      "position": "middle-left"
+    }
+  ],
+  "components": [
+    {
+      "label": "N",
+      "left_side_labels": [],
+      "position": "middle-left",
+      "right_side_terminals": []
+    },
+    {
+      "label": "RA",
+      "left_side_labels": [],
+      "position": "middle-left",
+      "right_side_terminals": []
+    }
+  ],
+  "has_crossovers": true,
+  "notes": "The diagram shows multiple parallel vertical lines indicating potential crossover points.",
+  "other_symbols": [],
+  "partition_labels": [
+    "MOUNT ON LEFT SIDE",
+    "REAR VIEW"
+  ],
+  "terminals": [
+    {
+      "has_slider": false,
+      "label": "651",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "652",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "653",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "654",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "951",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "952",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "953",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "954",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": true,
+      "label": "955",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "956",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "957",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "958",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "959",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "960",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "961",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "962",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "963",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "964",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    }
+  ],
+  "wire_labels": [
+    "B",
+    "BK",
+    "R",
+    "W",
+    "b",
+    "n",
+    "r",
+    "w"
+  ]
+}

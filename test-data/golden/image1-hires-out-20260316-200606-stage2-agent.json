@@ -1,0 +1,1040 @@
+{
+  "connections": [
+    {
+      "connection_id": "C1",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ1",
+      "target_object_id": "OBJ19"
+    },
+    {
+      "connection_id": "C10",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ8",
+      "target_object_id": "OBJ28"
+    },
+    {
+      "connection_id": "C11",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ10",
+      "target_object_id": "OBJ29"
+    },
+    {
+      "connection_id": "C12",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ12",
+      "target_object_id": "OBJ30"
+    },
+    {
+      "connection_id": "C13",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ19",
+      "target_object_id": "OBJ31"
+    },
+    {
+      "connection_id": "C14",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ20",
+      "target_object_id": "OBJ31"
+    },
+    {
+      "connection_id": "C15",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ21",
+      "target_object_id": "OBJ31"
+    },
+    {
+      "connection_id": "C16",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ22",
+      "target_object_id": "OBJ31"
+    },
+    {
+      "connection_id": "C17",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ23",
+      "target_object_id": "OBJ33"
+    },
+    {
+      "connection_id": "C18",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ24",
+      "target_object_id": "OBJ33"
+    },
+    {
+      "connection_id": "C19",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ25",
+      "target_object_id": "OBJ33"
+    },
+    {
+      "connection_id": "C2",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ2",
+      "target_object_id": "OBJ20"
+    },
+    {
+      "connection_id": "C20",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ26",
+      "target_object_id": "OBJ33"
+    },
+    {
+      "connection_id": "C21",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ27",
+      "target_object_id": "OBJ35"
+    },
+    {
+      "connection_id": "C22",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ28",
+      "target_object_id": "OBJ35"
+    },
+    {
+      "connection_id": "C23",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ29",
+      "target_object_id": "OBJ35"
+    },
+    {
+      "connection_id": "C24",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ30",
+      "target_object_id": "OBJ35"
+    },
+    {
+      "connection_id": "C25",
+      "relationship_type": "CABLE_TO_CONNECTOR",
+      "source_object_id": "OBJ31",
+      "target_object_id": "OBJ32"
+    },
+    {
+      "connection_id": "C26",
+      "relationship_type": "CABLE_TO_CONNECTOR",
+      "source_object_id": "OBJ33",
+      "target_object_id": "OBJ34"
+    },
+    {
+      "connection_id": "C27",
+      "relationship_type": "CABLE_TO_CONNECTOR",
+      "source_object_id": "OBJ35",
+      "target_object_id": "OBJ36"
+    },
+    {
+      "connection_id": "C28",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ5",
+      "target_object_id": "OBJ6"
+    },
+    {
+      "connection_id": "C29",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ7",
+      "target_object_id": "OBJ8"
+    },
+    {
+      "connection_id": "C3",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ3",
+      "target_object_id": "OBJ21"
+    },
+    {
+      "connection_id": "C30",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ9",
+      "target_object_id": "OBJ10"
+    },
+    {
+      "connection_id": "C31",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ11",
+      "target_object_id": "OBJ12"
+    },
+    {
+      "connection_id": "C4",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ4",
+      "target_object_id": "OBJ22"
+    },
+    {
+      "connection_id": "C5",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ5",
+      "target_object_id": "OBJ23"
+    },
+    {
+      "connection_id": "C6",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ7",
+      "target_object_id": "OBJ24"
+    },
+    {
+      "connection_id": "C7",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ9",
+      "target_object_id": "OBJ25"
+    },
+    {
+      "connection_id": "C8",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ11",
+      "target_object_id": "OBJ26"
+    },
+    {
+      "connection_id": "C9",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ6",
+      "target_object_id": "OBJ27"
+    }
+  ],
+  "objects": [
+    {
+      "assigned_cable": "N8000",
+      "assigned_wire_color": "R",
+      "bbox": {
+        "height": 25,
+        "width": 105,
+        "x": 635,
+        "y": 0
+      },
+      "confidence_score": 0.94,
+      "has_slider": false,
+      "jumpered_to_terminal": null,
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "654",
+      "system_object_id": "OBJ1",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": "N6000",
+      "assigned_wire_color": "B",
+      "bbox": {
+        "height": 43,
+        "width": 105,
+        "x": 635,
+        "y": 614
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": "960",
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "959",
+      "system_object_id": "OBJ10",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": "N7888",
+      "assigned_wire_color": "BK",
+      "bbox": {
+        "height": 44,
+        "width": 105,
+        "x": 635,
+        "y": 658
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": "957",
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "958",
+      "system_object_id": "OBJ11",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": "N6000",
+      "assigned_wire_color": "BK",
+      "bbox": {
+        "height": 44,
+        "width": 105,
+        "x": 635,
+        "y": 702
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": "958",
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "957",
+      "system_object_id": "OBJ12",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": null,
+      "assigned_wire_color": null,
+      "bbox": {
+        "height": 44,
+        "width": 105,
+        "x": 635,
+        "y": 746
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": null,
+      "left_cable_wire_detected": false,
+      "object_type": "TERMINAL",
+      "raw_text": "956",
+      "system_object_id": "OBJ13",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": null,
+      "assigned_wire_color": null,
+      "bbox": {
+        "height": 52,
+        "width": 105,
+        "x": 635,
+        "y": 791
+      },
+      "confidence_score": 0.99,
+      "has_slider": true,
+      "jumpered_to_terminal": null,
+      "left_cable_wire_detected": false,
+      "object_type": "TERMINAL",
+      "raw_text": "955",
+      "system_object_id": "OBJ14",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": null,
+      "assigned_wire_color": null,
+      "bbox": {
+        "height": 44,
+        "width": 105,
+        "x": 635,
+        "y": 844
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": null,
+      "left_cable_wire_detected": false,
+      "object_type": "TERMINAL",
+      "raw_text": "954",
+      "system_object_id": "OBJ15",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": null,
+      "assigned_wire_color": null,
+      "bbox": {
+        "height": 44,
+        "width": 105,
+        "x": 635,
+        "y": 888
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": null,
+      "left_cable_wire_detected": false,
+      "object_type": "TERMINAL",
+      "raw_text": "953",
+      "system_object_id": "OBJ16",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": null,
+      "assigned_wire_color": null,
+      "bbox": {
+        "height": 44,
+        "width": 105,
+        "x": 635,
+        "y": 932
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": null,
+      "left_cable_wire_detected": false,
+      "object_type": "TERMINAL",
+      "raw_text": "952",
+      "system_object_id": "OBJ17",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": null,
+      "assigned_wire_color": null,
+      "bbox": {
+        "height": 43,
+        "width": 105,
+        "x": 635,
+        "y": 977
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": null,
+      "left_cable_wire_detected": false,
+      "object_type": "TERMINAL",
+      "raw_text": "951",
+      "system_object_id": "OBJ18",
+      "visual_form": "rectangle"
+    },
+    {
+      "cable_label": "N8000",
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "R",
+      "route_segments": [
+        {
+          "x1": 408,
+          "x2": 408,
+          "y1": 13,
+          "y2": 127
+        },
+        {
+          "x1": 419,
+          "x2": 518,
+          "y1": 2,
+          "y2": 2
+        },
+        {
+          "x1": 571,
+          "x2": 637,
+          "y1": 2,
+          "y2": 2
+        }
+      ],
+      "system_object_id": "OBJ19",
+      "terminal_label": "654",
+      "visual_form": "line"
+    },
+    {
+      "assigned_cable": "N8000",
+      "assigned_wire_color": "W",
+      "bbox": {
+        "height": 43,
+        "width": 105,
+        "x": 635,
+        "y": 26
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": null,
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "653",
+      "system_object_id": "OBJ2",
+      "visual_form": "rectangle"
+    },
+    {
+      "cable_label": "N8000",
+      "confidence_score": 0.99,
+      "object_type": "WIRE",
+      "raw_text": "W",
+      "route_segments": [
+        {
+          "x1": 407,
+          "x2": 518,
+          "y1": 46,
+          "y2": 46
+        },
+        {
+          "x1": 408,
+          "x2": 408,
+          "y1": 13,
+          "y2": 127
+        },
+        {
+          "x1": 571,
+          "x2": 635,
+          "y1": 46,
+          "y2": 46
+        }
+      ],
+      "system_object_id": "OBJ20",
+      "terminal_label": "653",
+      "visual_form": "line"
+    },
+    {
+      "cable_label": "N8000",
+      "confidence_score": 0.99,
+      "object_type": "WIRE",
+      "raw_text": "B",
+      "route_segments": [
+        {
+          "x1": 407,
+          "x2": 518,
+          "y1": 91,
+          "y2": 91
+        },
+        {
+          "x1": 408,
+          "x2": 408,
+          "y1": 13,
+          "y2": 127
+        },
+        {
+          "x1": 571,
+          "x2": 637,
+          "y1": 91,
+          "y2": 91
+        }
+      ],
+      "system_object_id": "OBJ21",
+      "terminal_label": "652",
+      "visual_form": "line"
+    },
+    {
+      "cable_label": "N8000",
+      "confidence_score": 0.99,
+      "object_type": "WIRE",
+      "raw_text": "BK",
+      "route_segments": [
+        {
+          "x1": 277,
+          "x2": 518,
+          "y1": 134,
+          "y2": 134
+        },
+        {
+          "x1": 572,
+          "x2": 637,
+          "y1": 134,
+          "y2": 134
+        }
+      ],
+      "system_object_id": "OBJ22",
+      "terminal_label": "651",
+      "visual_form": "line"
+    },
+    {
+      "cable_label": "N7888",
+      "confidence_score": 0.99,
+      "object_type": "WIRE",
+      "raw_text": "R",
+      "route_segments": [
+        {
+          "x1": 268,
+          "x2": 509,
+          "y1": 412,
+          "y2": 412
+        },
+        {
+          "x1": 550,
+          "x2": 636,
+          "y1": 412,
+          "y2": 412
+        }
+      ],
+      "system_object_id": "OBJ23",
+      "terminal_label": "964",
+      "visual_form": "line"
+    },
+    {
+      "cable_label": "N7888",
+      "confidence_score": 0.99,
+      "object_type": "WIRE",
+      "raw_text": "W",
+      "route_segments": [
+        {
+          "x1": 376,
+          "x2": 376,
+          "y1": 412,
+          "y2": 669
+        },
+        {
+          "x1": 388,
+          "x2": 522,
+          "y1": 501,
+          "y2": 501
+        },
+        {
+          "x1": 555,
+          "x2": 622,
+          "y1": 501,
+          "y2": 501
+        }
+      ],
+      "system_object_id": "OBJ24",
+      "terminal_label": "962",
+      "visual_form": "line"
+    },
+    {
+      "cable_label": "N7888",
+      "confidence_score": 0.99,
+      "object_type": "WIRE",
+      "raw_text": "B",
+      "route_segments": [
+        {
+          "x1": 376,
+          "x2": 376,
+          "y1": 412,
+          "y2": 669
+        },
+        {
+          "x1": 389,
+          "x2": 516,
+          "y1": 589,
+          "y2": 589
+        },
+        {
+          "x1": 549,
+          "x2": 636,
+          "y1": 589,
+          "y2": 589
+        }
+      ],
+      "system_object_id": "OBJ25",
+      "terminal_label": "960",
+      "visual_form": "line"
+    },
+    {
+      "cable_label": "N7888",
+      "confidence_score": 0.99,
+      "object_type": "WIRE",
+      "raw_text": "BK",
+      "route_segments": [
+        {
+          "x1": 376,
+          "x2": 376,
+          "y1": 412,
+          "y2": 669
+        },
+        {
+          "x1": 390,
+          "x2": 530,
+          "y1": 679,
+          "y2": 679
+        },
+        {
+          "x1": 562,
+          "x2": 636,
+          "y1": 679,
+          "y2": 679
+        }
+      ],
+      "system_object_id": "OBJ26",
+      "terminal_label": "958",
+      "visual_form": "line"
+    },
+    {
+      "cable_label": "N6000",
+      "confidence_score": 0.99,
+      "object_type": "WIRE",
+      "raw_text": "R",
+      "route_segments": [
+        {
+          "x1": 421,
+          "x2": 421,
+          "y1": 470,
+          "y2": 725
+        },
+        {
+          "x1": 432,
+          "x2": 522,
+          "y1": 456,
+          "y2": 456
+        },
+        {
+          "x1": 550,
+          "x2": 622,
+          "y1": 456,
+          "y2": 456
+        }
+      ],
+      "system_object_id": "OBJ27",
+      "terminal_label": "963",
+      "visual_form": "line"
+    },
+    {
+      "cable_label": "N6000",
+      "confidence_score": 0.99,
+      "object_type": "WIRE",
+      "raw_text": "W",
+      "route_segments": [
+        {
+          "x1": 421,
+          "x2": 421,
+          "y1": 470,
+          "y2": 725
+        },
+        {
+          "x1": 435,
+          "x2": 516,
+          "y1": 546,
+          "y2": 546
+        },
+        {
+          "x1": 555,
+          "x2": 628,
+          "y1": 546,
+          "y2": 546
+        }
+      ],
+      "system_object_id": "OBJ28",
+      "terminal_label": "961",
+      "visual_form": "line"
+    },
+    {
+      "cable_label": "N6000",
+      "confidence_score": 0.99,
+      "object_type": "WIRE",
+      "raw_text": "B",
+      "route_segments": [
+        {
+          "x1": 421,
+          "x2": 421,
+          "y1": 470,
+          "y2": 725
+        },
+        {
+          "x1": 433,
+          "x2": 522,
+          "y1": 634,
+          "y2": 634
+        },
+        {
+          "x1": 549,
+          "x2": 628,
+          "y1": 634,
+          "y2": 634
+        }
+      ],
+      "system_object_id": "OBJ29",
+      "terminal_label": "959",
+      "visual_form": "line"
+    },
+    {
+      "assigned_cable": "N8000",
+      "assigned_wire_color": "B",
+      "bbox": {
+        "height": 43,
+        "width": 105,
+        "x": 635,
+        "y": 70
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": null,
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "652",
+      "system_object_id": "OBJ3",
+      "visual_form": "rectangle"
+    },
+    {
+      "cable_label": "N6000",
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "BK",
+      "route_segments": [
+        {
+          "x1": 268,
+          "x2": 509,
+          "y1": 722,
+          "y2": 722
+        },
+        {
+          "x1": 562,
+          "x2": 623,
+          "y1": 722,
+          "y2": 722
+        }
+      ],
+      "system_object_id": "OBJ30",
+      "terminal_label": "957",
+      "visual_form": "line"
+    },
+    {
+      "center": {
+        "x": 205,
+        "y": 133
+      },
+      "confidence_score": 0.99,
+      "object_type": "CABLE_LABEL",
+      "radius": 73,
+      "raw_text": "N8000",
+      "system_object_id": "OBJ31",
+      "visual_form": "circle"
+    },
+    {
+      "center": {
+        "x": 79,
+        "y": 133
+      },
+      "confidence_score": 0.98,
+      "object_type": "OFF_PAGE_CONNECTOR",
+      "radius": 59,
+      "raw_text": "RA 530",
+      "system_object_id": "OBJ32",
+      "visual_form": "circle"
+    },
+    {
+      "center": {
+        "x": 199,
+        "y": 415
+      },
+      "confidence_score": 0.99,
+      "object_type": "CABLE_LABEL",
+      "radius": 70,
+      "raw_text": "N7888",
+      "system_object_id": "OBJ33",
+      "visual_form": "circle"
+    },
+    {
+      "center": {
+        "x": 71,
+        "y": 415
+      },
+      "confidence_score": 0.98,
+      "object_type": "OFF_PAGE_CONNECTOR",
+      "radius": 59,
+      "raw_text": "RA 506B",
+      "system_object_id": "OBJ34",
+      "visual_form": "circle"
+    },
+    {
+      "center": {
+        "x": 196,
+        "y": 723
+      },
+      "confidence_score": 0.99,
+      "object_type": "CABLE_LABEL",
+      "radius": 71,
+      "raw_text": "N6000",
+      "system_object_id": "OBJ35",
+      "visual_form": "circle"
+    },
+    {
+      "center": {
+        "x": 71,
+        "y": 724
+      },
+      "confidence_score": 0.98,
+      "object_type": "OFF_PAGE_CONNECTOR",
+      "radius": 57,
+      "raw_text": "RA 500B",
+      "system_object_id": "OBJ36",
+      "visual_form": "circle"
+    },
+    {
+      "assigned_cable": "N8000",
+      "assigned_wire_color": "BK",
+      "bbox": {
+        "height": 44,
+        "width": 105,
+        "x": 635,
+        "y": 114
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": null,
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "651",
+      "system_object_id": "OBJ4",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": "N7888",
+      "assigned_wire_color": "R",
+      "bbox": {
+        "height": 43,
+        "width": 105,
+        "x": 635,
+        "y": 392
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": "963",
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "964",
+      "system_object_id": "OBJ5",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": "N6000",
+      "assigned_wire_color": "R",
+      "bbox": {
+        "height": 44,
+        "width": 105,
+        "x": 635,
+        "y": 436
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": "964",
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "963",
+      "system_object_id": "OBJ6",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": "N7888",
+      "assigned_wire_color": "W",
+      "bbox": {
+        "height": 43,
+        "width": 105,
+        "x": 635,
+        "y": 481
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": "961",
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "962",
+      "system_object_id": "OBJ7",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": "N6000",
+      "assigned_wire_color": "W",
+      "bbox": {
+        "height": 44,
+        "width": 105,
+        "x": 635,
+        "y": 525
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": "962",
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "961",
+      "system_object_id": "OBJ8",
+      "visual_form": "rectangle"
+    },
+    {
+      "assigned_cable": "N7888",
+      "assigned_wire_color": "B",
+      "bbox": {
+        "height": 44,
+        "width": 105,
+        "x": 635,
+        "y": 569
+      },
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "jumpered_to_terminal": "959",
+      "left_cable_wire_detected": true,
+      "object_type": "TERMINAL",
+      "raw_text": "960",
+      "system_object_id": "OBJ9",
+      "visual_form": "rectangle"
+    }
+  ],
+  "partition_memberships": [
+    {
+      "member_object_id": "OBJ1",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ2",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ3",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ4",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ5",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ6",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ7",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ8",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ9",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ10",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ11",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ12",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ13",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ14",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ15",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ16",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ17",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ18",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ19",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ20",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ21",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ22",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ23",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ24",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ25",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ26",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ27",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ28",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ29",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ30",
+      "partition_id": "TB1"
+    }
+  ]
+}

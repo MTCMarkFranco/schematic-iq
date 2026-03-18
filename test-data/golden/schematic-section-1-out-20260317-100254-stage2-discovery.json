@@ -1,0 +1,230 @@
+{
+  "cables": [
+    {
+      "adjacent_labels": [
+        "RA 500B"
+      ],
+      "label": "N 6000",
+      "off_page_connector": null,
+      "position": "bottom-left"
+    },
+    {
+      "adjacent_labels": [
+        "RA 506B"
+      ],
+      "label": "N 7888",
+      "off_page_connector": null,
+      "position": "middle-left"
+    },
+    {
+      "adjacent_labels": [
+        "RA 530"
+      ],
+      "label": "N 8000",
+      "off_page_connector": null,
+      "position": "top-left"
+    },
+    {
+      "adjacent_labels": [
+        "RA 500B"
+      ],
+      "label": "N6000",
+      "off_page_connector": null,
+      "position": "bottom-left"
+    },
+    {
+      "adjacent_labels": [
+        "RA 506B"
+      ],
+      "label": "N7888",
+      "off_page_connector": null,
+      "position": "middle-center"
+    },
+    {
+      "adjacent_labels": [
+        "RA 530"
+      ],
+      "label": "N8000",
+      "off_page_connector": null,
+      "position": "top-center"
+    }
+  ],
+  "components": [
+    {
+      "label": "N",
+      "left_side_labels": [],
+      "position": "top-left",
+      "right_side_terminals": []
+    },
+    {
+      "label": "N6000",
+      "left_side_labels": [
+        "RA 500B"
+      ],
+      "position": "bottom-left",
+      "right_side_terminals": []
+    },
+    {
+      "label": "N7888",
+      "left_side_labels": [
+        "RA 506B"
+      ],
+      "position": "middle-center",
+      "right_side_terminals": []
+    },
+    {
+      "label": "N8000",
+      "left_side_labels": [
+        "RA 530"
+      ],
+      "position": "top-center",
+      "right_side_terminals": []
+    },
+    {
+      "label": "RA",
+      "left_side_labels": [],
+      "position": "top-left",
+      "right_side_terminals": []
+    }
+  ],
+  "has_crossovers": true,
+  "notes": "All components and terminals are clearly visible, with no observed crossovers.",
+  "other_symbols": [
+    {
+      "position": "middle-right",
+      "shape": "rectangle",
+      "text": "NC"
+    }
+  ],
+  "partition_labels": [
+    "MOUNT ON LEFT SIDE",
+    "REAR VIEW",
+    "TB1"
+  ],
+  "terminals": [
+    {
+      "has_slider": false,
+      "label": "651",
+      "position": "top-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "652",
+      "position": "top-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "653",
+      "position": "top-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "654",
+      "position": "top-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "951",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "952",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "953",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "954",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": true,
+      "label": "955",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "956",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "957",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "958",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "959",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "960",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "961",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "962",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "963",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "964",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "NC",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    }
+  ],
+  "wire_labels": [
+    "4C",
+    "B",
+    "BK",
+    "R",
+    "W",
+    "b",
+    "n",
+    "w"
+  ]
+}
