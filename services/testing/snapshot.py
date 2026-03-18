@@ -42,17 +42,39 @@ def save_snapshot(
 
 
 def update_golden_from_output(output_dir: str = "output", golden_dir: str = "test-data/golden") -> list[str]:
-    """Copy existing output files to golden directory (for bootstrapping).
+    """Promote output files to golden files.
 
-    Returns list of paths created.
+    Output files are named ``<fixture>-out-<timestamp>-<stage>.json``.
+    Golden files are written as ``golden-<fixture>-<stage>.json``.
+    When multiple timestamps exist for the same fixture+stage, the latest
+    output is used.
+
+    Returns list of golden paths created.
     """
+    import re
+
+    output_re = re.compile(
+        r"^(?P<fixture>.+?)-out-(?P<ts>\d{8}-\d{6})-(?P<stage>stage\d+-\w+)\.json$"
+    )
+
     os.makedirs(golden_dir, exist_ok=True)
-    created = []
-    for filename in sorted(os.listdir(output_dir)):
-        if not filename.endswith(".json"):
+
+    # Pick the latest output per (fixture, stage)
+    latest: dict[tuple[str, str], tuple[str, str]] = {}  # key -> (ts, filename)
+    for filename in os.listdir(output_dir):
+        m = output_re.match(filename)
+        if not m:
             continue
+        fixture, ts, stage = m.group("fixture"), m.group("ts"), m.group("stage")
+        key = (fixture, stage)
+        if key not in latest or ts > latest[key][0]:
+            latest[key] = (ts, filename)
+
+    created = []
+    for (fixture, stage), (_ts, filename) in sorted(latest.items()):
         src = os.path.join(output_dir, filename)
-        dst = os.path.join(golden_dir, filename)
+        golden_name = f"golden-{fixture}-{stage}.json"
+        dst = os.path.join(golden_dir, golden_name)
         with open(src) as f:
             data = json.load(f)
         normalized = normalize_for_comparison(data)

@@ -29,29 +29,38 @@ from services.testing.snapshot import update_golden_from_output
 GOLDEN_DIR = os.path.join("test-data", "golden")
 OUTPUT_DIR = "output"
 
-# Matches: <fixture>-out-<YYYYMMDD>-<HHMMSS>-<stage>.json
-_FILENAME_RE = re.compile(
+# Matches output files: <fixture>-out-<YYYYMMDD>-<HHMMSS>-<stage>.json
+_OUTPUT_RE = re.compile(
     r"^(?P<fixture>.+?)-out-(?P<ts>\d{8}-\d{6})-(?P<stage>stage\d+-\w+)\.json$"
 )
 
-STAGES = (
-    "stage0-geometry", "stage1-geometry",
-    "stage1-discovery", "stage2-discovery",
-    "stage2-agent", "stage3-final",
+# Matches golden files: golden-<fixture>-<stage>.json
+_GOLDEN_RE = re.compile(
+    r"^golden-(?P<fixture>.+?)-(?P<stage>stage\d+-\w+)\.json$"
 )
 
 
-def _parse_filename(name: str) -> tuple[str, str, str] | None:
+def _parse_output_filename(name: str) -> tuple[str, str, str] | None:
     """Parse a pipeline output filename into (fixture, timestamp, stage)."""
-    m = _FILENAME_RE.match(name)
+    m = _OUTPUT_RE.match(name)
     if m:
         return m.group("fixture"), m.group("ts"), m.group("stage")
+    return None
+
+
+def _parse_golden_filename(name: str) -> tuple[str, str] | None:
+    """Parse a golden filename into (fixture, stage)."""
+    m = _GOLDEN_RE.match(name)
+    if m:
+        return m.group("fixture"), m.group("stage")
     return None
 
 
 def find_golden_pairs(fixture_filter: str | None = None) -> list[tuple[str, str]]:
     """Find pairs of (output_file, golden_file) for comparison.
 
+    Golden files are named ``golden-<fixture>-<stage>.json``.
+    Output files are named ``<fixture>-out-<timestamp>-<stage>.json``.
     Matches by fixture name + stage.  When multiple output timestamps
     exist for the same fixture+stage, the latest one is used.
 
@@ -65,20 +74,19 @@ def find_golden_pairs(fixture_filter: str | None = None) -> list[tuple[str, str]
     # Index golden files by (fixture, stage)
     golden_by_key: dict[tuple[str, str], str] = {}
     for name in os.listdir(GOLDEN_DIR):
-        parsed = _parse_filename(name)
+        parsed = _parse_golden_filename(name)
         if parsed:
-            fixture, _ts, stage = parsed
-            golden_by_key[(fixture, stage)] = name
+            golden_by_key[parsed] = name
 
     # Index output files by (fixture, stage), keeping latest timestamp
     output_by_key: dict[tuple[str, str], str] = {}
     for name in os.listdir(OUTPUT_DIR):
-        parsed = _parse_filename(name)
+        parsed = _parse_output_filename(name)
         if parsed:
             fixture, ts, stage = parsed
             key = (fixture, stage)
             existing = output_by_key.get(key)
-            if existing is None or ts > _parse_filename(existing)[1]:
+            if existing is None or ts > _parse_output_filename(existing)[1]:
                 output_by_key[key] = name
 
     # Build pairs where fixture+stage match

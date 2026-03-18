@@ -2,59 +2,42 @@
   "cables": [
     {
       "adjacent_labels": [
-        "RA 500B"
+        "4C"
       ],
-      "label": "N 6000",
-      "off_page_connector": null,
-      "position": "bottom-left"
-    },
-    {
-      "adjacent_labels": [
-        "RA 506B"
-      ],
-      "label": "N 7888",
+      "label": "N6000",
       "off_page_connector": null,
       "position": "middle-left"
     },
     {
       "adjacent_labels": [
-        "RA 530"
-      ],
-      "label": "N 8000",
-      "off_page_connector": null,
-      "position": "top-left"
-    },
-    {
-      "adjacent_labels": [
-        "RA 500B"
-      ],
-      "label": "N6000",
-      "off_page_connector": null,
-      "position": "bottom-left"
-    },
-    {
-      "adjacent_labels": [
-        "RA 506B"
+        "4C"
       ],
       "label": "N7888",
       "off_page_connector": null,
-      "position": "middle-center"
+      "position": "middle-left"
     },
     {
       "adjacent_labels": [
-        "RA 530"
+        "4C"
       ],
       "label": "N8000",
       "off_page_connector": null,
-      "position": "top-center"
+      "position": "middle-left"
     }
   ],
   "components": [
     {
       "label": "N",
-      "left_side_labels": [],
-      "position": "top-left",
-      "right_side_terminals": []
+      "left_side_labels": [
+        "N 8000"
+      ],
+      "position": "middle-left",
+      "right_side_terminals": [
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK"
+      ]
     },
     {
       "label": "N6000",
@@ -62,68 +45,81 @@
         "RA 500B"
       ],
       "position": "bottom-left",
-      "right_side_terminals": []
+      "right_side_terminals": [
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK",
+        "(+) BK"
+      ]
     },
     {
       "label": "N7888",
       "left_side_labels": [
         "RA 506B"
       ],
-      "position": "middle-center",
-      "right_side_terminals": []
+      "position": "middle-left",
+      "right_side_terminals": [
+        "(+) R",
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK"
+      ]
     },
     {
       "label": "N8000",
       "left_side_labels": [
         "RA 530"
       ],
-      "position": "top-center",
-      "right_side_terminals": []
+      "position": "middle-left",
+      "right_side_terminals": [
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK",
+        "(+) n"
+      ]
     },
     {
       "label": "RA",
-      "left_side_labels": [],
-      "position": "top-left",
+      "left_side_labels": [
+        "RA 530"
+      ],
+      "position": "middle-left",
       "right_side_terminals": []
     }
   ],
   "has_crossovers": true,
-  "notes": "All components and terminals are clearly visible, with no observed crossovers.",
-  "other_symbols": [
-    {
-      "position": "middle-right",
-      "shape": "rectangle",
-      "text": "NC"
-    }
-  ],
+  "notes": "The diagram is structured with multiple components and terminals, and minimal adjacent labels are present.",
+  "other_symbols": [],
   "partition_labels": [
     "MOUNT ON LEFT SIDE",
-    "REAR VIEW",
-    "TB1"
+    "REAR VIEW"
   ],
   "terminals": [
     {
       "has_slider": false,
       "label": "651",
-      "position": "top-right",
+      "position": "middle-right",
       "terminal_block": "TB1"
     },
     {
       "has_slider": false,
       "label": "652",
-      "position": "top-right",
+      "position": "middle-right",
       "terminal_block": "TB1"
     },
     {
       "has_slider": false,
       "label": "653",
-      "position": "top-right",
+      "position": "middle-right",
       "terminal_block": "TB1"
     },
     {
       "has_slider": false,
       "label": "654",
-      "position": "top-right",
+      "position": "middle-right",
       "terminal_block": "TB1"
     },
     {
@@ -209,22 +205,13 @@
       "label": "964",
       "position": "middle-right",
       "terminal_block": "TB1"
-    },
-    {
-      "has_slider": false,
-      "label": "NC",
-      "position": "middle-right",
-      "terminal_block": "TB1"
     }
   ],
   "wire_labels": [
-    "4C",
     "B",
     "BK",
     "R",
     "W",
-    "b",
-    "n",
-    "w"
+    "n"
   ]
 }
