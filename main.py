@@ -35,6 +35,7 @@ from services.discovery_service import run_full_discovery
 from services.agent_extraction_service import run_agent_extraction
 from services.validation_service import post_process_and_validate
 from services.telemetry import get_logger, configure_logging, PipelineMetrics
+from services.errors import PipelineError, Stage1Error, Stage2Error, Stage3Error
 
 # ── Initialization ───────────────────────────────────────────────────────────
 load_dotenv()
@@ -257,4 +258,13 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except PipelineError as exc:
+        console.print(f"\n[bold red]Pipeline failed:[/bold red] {exc}")
+        log = get_logger("pipeline")
+        log.error("pipeline_failed", error=str(exc), exit_code=exc.exit_code, **exc.details)
+        raise SystemExit(exc.exit_code)
+    except KeyboardInterrupt:
+        console.print("\n[yellow]Interrupted by user[/yellow]")
+        raise SystemExit(130)
