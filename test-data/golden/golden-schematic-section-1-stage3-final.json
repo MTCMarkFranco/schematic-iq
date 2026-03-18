@@ -1,0 +1,746 @@
+{
+  "connections": [
+    {
+      "connection_id": "C1",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ1",
+      "target_object_id": "OBJ25"
+    },
+    {
+      "connection_id": "C2",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ25",
+      "target_object_id": "OBJ19"
+    },
+    {
+      "connection_id": "C3",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ2",
+      "target_object_id": "OBJ26"
+    },
+    {
+      "connection_id": "C4",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ26",
+      "target_object_id": "OBJ19"
+    },
+    {
+      "connection_id": "C5",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ3",
+      "target_object_id": "OBJ27"
+    },
+    {
+      "connection_id": "C6",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ27",
+      "target_object_id": "OBJ19"
+    },
+    {
+      "connection_id": "C7",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ4",
+      "target_object_id": "OBJ28"
+    },
+    {
+      "connection_id": "C8",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ28",
+      "target_object_id": "OBJ19"
+    },
+    {
+      "connection_id": "C9",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ5",
+      "target_object_id": "OBJ29"
+    },
+    {
+      "connection_id": "C10",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ29",
+      "target_object_id": "OBJ20"
+    },
+    {
+      "connection_id": "C11",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ6",
+      "target_object_id": "OBJ30"
+    },
+    {
+      "connection_id": "C12",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ30",
+      "target_object_id": "OBJ21"
+    },
+    {
+      "connection_id": "C13",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ7",
+      "target_object_id": "OBJ31"
+    },
+    {
+      "connection_id": "C14",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ31",
+      "target_object_id": "OBJ20"
+    },
+    {
+      "connection_id": "C15",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ8",
+      "target_object_id": "OBJ32"
+    },
+    {
+      "connection_id": "C16",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ32",
+      "target_object_id": "OBJ21"
+    },
+    {
+      "connection_id": "C17",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ9",
+      "target_object_id": "OBJ33"
+    },
+    {
+      "connection_id": "C18",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ33",
+      "target_object_id": "OBJ20"
+    },
+    {
+      "connection_id": "C19",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ10",
+      "target_object_id": "OBJ34"
+    },
+    {
+      "connection_id": "C20",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ34",
+      "target_object_id": "OBJ21"
+    },
+    {
+      "connection_id": "C21",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ11",
+      "target_object_id": "OBJ35"
+    },
+    {
+      "connection_id": "C22",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ35",
+      "target_object_id": "OBJ20"
+    },
+    {
+      "connection_id": "C23",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ12",
+      "target_object_id": "OBJ36"
+    },
+    {
+      "connection_id": "C24",
+      "relationship_type": "WIRE_TO_CABLE",
+      "source_object_id": "OBJ36",
+      "target_object_id": "OBJ21"
+    },
+    {
+      "connection_id": "C25",
+      "relationship_type": "CABLE_TO_CONNECTOR",
+      "source_object_id": "OBJ19",
+      "target_object_id": "OBJ22"
+    },
+    {
+      "connection_id": "C26",
+      "relationship_type": "CABLE_TO_CONNECTOR",
+      "source_object_id": "OBJ20",
+      "target_object_id": "OBJ23"
+    },
+    {
+      "connection_id": "C27",
+      "relationship_type": "CABLE_TO_CONNECTOR",
+      "source_object_id": "OBJ21",
+      "target_object_id": "OBJ24"
+    },
+    {
+      "connection_id": "C28",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ5",
+      "target_object_id": "OBJ6"
+    },
+    {
+      "connection_id": "C29",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ7",
+      "target_object_id": "OBJ8"
+    },
+    {
+      "connection_id": "C30",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ9",
+      "target_object_id": "OBJ10"
+    },
+    {
+      "connection_id": "C31",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ11",
+      "target_object_id": "OBJ12"
+    },
+    {
+      "connection_id": "C32",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ12",
+      "target_object_id": "OBJ13"
+    },
+    {
+      "connection_id": "C33",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ15",
+      "target_object_id": "OBJ16"
+    },
+    {
+      "connection_id": "C34",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ16",
+      "target_object_id": "OBJ17"
+    },
+    {
+      "connection_id": "C35",
+      "relationship_type": "JUMPER_SHORT",
+      "source_object_id": "OBJ17",
+      "target_object_id": "OBJ18"
+    },
+    {
+      "connection_id": "C36",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ1",
+      "target_object_id": "OBJ37"
+    },
+    {
+      "connection_id": "C37",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ2",
+      "target_object_id": "OBJ38"
+    },
+    {
+      "connection_id": "C38",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ3",
+      "target_object_id": "OBJ39"
+    },
+    {
+      "connection_id": "C39",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ4",
+      "target_object_id": "OBJ40"
+    },
+    {
+      "connection_id": "C40",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ5",
+      "target_object_id": "OBJ41"
+    },
+    {
+      "connection_id": "C41",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ7",
+      "target_object_id": "OBJ42"
+    },
+    {
+      "connection_id": "C42",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ9",
+      "target_object_id": "OBJ43"
+    },
+    {
+      "connection_id": "C43",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ11",
+      "target_object_id": "OBJ44"
+    },
+    {
+      "connection_id": "C44",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ14",
+      "target_object_id": "OBJ45"
+    },
+    {
+      "connection_id": "C45",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ15",
+      "target_object_id": "OBJ46"
+    },
+    {
+      "connection_id": "C46",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ16",
+      "target_object_id": "OBJ47"
+    },
+    {
+      "connection_id": "C47",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ17",
+      "target_object_id": "OBJ48"
+    },
+    {
+      "connection_id": "C48",
+      "relationship_type": "DIRECT_WIRE",
+      "source_object_id": "OBJ18",
+      "target_object_id": "OBJ49"
+    }
+  ],
+  "objects": [
+    {
+      "confidence_score": 0.92,
+      "has_slider": false,
+      "notes": "terminal partially cropped at top image edge",
+      "object_type": "TERMINAL",
+      "raw_text": "654",
+      "system_object_id": "OBJ1",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "653",
+      "system_object_id": "OBJ2",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "652",
+      "system_object_id": "OBJ3",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "651",
+      "system_object_id": "OBJ4",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "964",
+      "system_object_id": "OBJ5",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "963",
+      "system_object_id": "OBJ6",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "962",
+      "system_object_id": "OBJ7",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "961",
+      "system_object_id": "OBJ8",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "960",
+      "system_object_id": "OBJ9",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "959",
+      "system_object_id": "OBJ10",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "958",
+      "system_object_id": "OBJ11",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "957",
+      "system_object_id": "OBJ12",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "956",
+      "system_object_id": "OBJ13",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": true,
+      "notes": "OpenCV slider rectangle detected; adjacent NC annotation visible",
+      "object_type": "TERMINAL",
+      "raw_text": "955",
+      "system_object_id": "OBJ14",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "954",
+      "system_object_id": "OBJ15",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "953",
+      "system_object_id": "OBJ16",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "952",
+      "system_object_id": "OBJ17",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "has_slider": false,
+      "object_type": "TERMINAL",
+      "raw_text": "951",
+      "system_object_id": "OBJ18",
+      "visual_form": "rectangle"
+    },
+    {
+      "confidence_score": 0.98,
+      "object_type": "CABLE_LABEL",
+      "raw_text": "N8000",
+      "system_object_id": "OBJ19",
+      "visual_form": "circle"
+    },
+    {
+      "confidence_score": 0.98,
+      "object_type": "CABLE_LABEL",
+      "raw_text": "N7888",
+      "system_object_id": "OBJ20",
+      "visual_form": "circle"
+    },
+    {
+      "confidence_score": 0.98,
+      "object_type": "CABLE_LABEL",
+      "raw_text": "N6000",
+      "system_object_id": "OBJ21",
+      "visual_form": "circle"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "OFF_PAGE_CONNECTOR",
+      "raw_text": "RA 530",
+      "system_object_id": "OBJ22",
+      "visual_form": "circle"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "OFF_PAGE_CONNECTOR",
+      "raw_text": "RA 506B",
+      "system_object_id": "OBJ23",
+      "visual_form": "circle"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "OFF_PAGE_CONNECTOR",
+      "raw_text": "RA 500B",
+      "system_object_id": "OBJ24",
+      "visual_form": "circle"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "R",
+      "system_object_id": "OBJ25",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "W",
+      "system_object_id": "OBJ26",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "B",
+      "system_object_id": "OBJ27",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "BK",
+      "system_object_id": "OBJ28",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "R",
+      "system_object_id": "OBJ29",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "R",
+      "system_object_id": "OBJ30",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "W",
+      "system_object_id": "OBJ31",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "W",
+      "system_object_id": "OBJ32",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "B",
+      "system_object_id": "OBJ33",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "B",
+      "system_object_id": "OBJ34",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "BK",
+      "system_object_id": "OBJ35",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.97,
+      "object_type": "WIRE",
+      "raw_text": "BK",
+      "system_object_id": "OBJ36",
+      "visual_form": "line",
+      "wire_type": "CABLE_WIRE"
+    },
+    {
+      "confidence_score": 0.85,
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "fake-B10-1",
+      "system_object_id": "OBJ37",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.95,
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "fake-B10-2",
+      "system_object_id": "OBJ38",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.95,
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "fake-B10-9",
+      "system_object_id": "OBJ39",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.95,
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "fake-B10-5",
+      "system_object_id": "OBJ40",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.95,
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "fake-B18",
+      "system_object_id": "OBJ41",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.95,
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "(fake-B18-M2)",
+      "system_object_id": "OBJ42",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.95,
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "(fake-B18-M2)",
+      "system_object_id": "OBJ43",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.75,
+      "notes": "visible text lacks opening parenthesis",
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "fake-B17-M2)",
+      "system_object_id": "OBJ44",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.95,
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "fake-STA GRD",
+      "system_object_id": "OBJ45",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.6,
+      "notes": "text visibly truncated at right image edge",
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "(fake-BSC62-S",
+      "system_object_id": "OBJ46",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.75,
+      "notes": "text visibly truncated at right image edge",
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "(fake-BS64-S2",
+      "system_object_id": "OBJ47",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.9,
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "(fake-B18-S2)",
+      "system_object_id": "OBJ48",
+      "visual_form": "text"
+    },
+    {
+      "confidence_score": 0.9,
+      "object_type": "SYMBOLIC_COMPONENT",
+      "raw_text": "(fake-B18-S2)",
+      "system_object_id": "OBJ49",
+      "visual_form": "text"
+    }
+  ],
+  "partition_memberships": [
+    {
+      "member_object_id": "OBJ1",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ2",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ3",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ4",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ5",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ6",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ7",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ8",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ9",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ10",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ11",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ12",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ13",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ14",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ15",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ16",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ17",
+      "partition_id": "TB1"
+    },
+    {
+      "member_object_id": "OBJ18",
+      "partition_id": "TB1"
+    }
+  ]
+}

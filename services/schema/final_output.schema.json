@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schematic-iq/schema/final_output/v1",
+  "title": "Schematic-IQ Final Extraction Output",
+  "description": "Schema for the final structured extraction from an electrical schematic image (Stage 3 output after post-processing).",
+  "type": "object",
+  "required": ["objects", "connections"],
+  "additionalProperties": false,
+  "properties": {
+    "objects": {
+      "type": "array",
+      "description": "All extracted schematic objects.",
+      "items": {
+        "$ref": "#/definitions/SchematicObject"
+      }
+    },
+    "connections": {
+      "type": "array",
+      "description": "All connections/relationships between objects.",
+      "items": {
+        "$ref": "#/definitions/Connection"
+      }
+    },
+    "partition_memberships": {
+      "type": "array",
+      "description": "Terminal block partition memberships.",
+      "items": {
+        "$ref": "#/definitions/PartitionMembership"
+      }
+    }
+  },
+  "definitions": {
+    "SchematicObject": {
+      "type": "object",
+      "required": ["system_object_id", "object_type", "raw_text"],
+      "properties": {
+        "system_object_id": {
+          "type": "string",
+          "pattern": "^OBJ\\d+$",
+          "description": "Unique object identifier (e.g., OBJ1, OBJ2)."
+        },
+        "object_type": {
+          "type": "string",
+          "enum": ["TERMINAL", "WIRE", "CABLE_LABEL", "OFF_PAGE_CONNECTOR", "SYMBOLIC_COMPONENT"],
+          "description": "The classification of this schematic object."
+        },
+        "visual_form": {
+          "type": "string",
+          "enum": ["rectangle", "line", "circle", "pentagon", "arrow", "unknown"],
+          "description": "Visual shape of the object in the schematic."
+        },
+        "raw_text": {
+          "type": "string",
+          "description": "The text label or identifier read from the schematic."
+        },
+        "confidence_score": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence (0.0–1.0)."
+        },
+        "has_slider": {
+          "type": "boolean",
+          "description": "Whether this terminal has a slider contact (TERMINAL only)."
+        },
+        "bbox": {
+          "$ref": "#/definitions/BoundingBox",
+          "description": "Bounding box in pixel coordinates (TERMINAL objects)."
+        },
+        "center": {
+          "$ref": "#/definitions/Point",
+          "description": "Center point in pixel coordinates (CABLE_LABEL, OFF_PAGE_CONNECTOR)."
+        },
+        "radius": {
+          "type": "number",
+          "description": "Circle radius in pixels (CABLE_LABEL, OFF_PAGE_CONNECTOR)."
+        },
+        "route_segments": {
+          "type": "array",
+          "description": "Wire routing segments in pixel coordinates (WIRE objects).",
+          "items": {
+            "$ref": "#/definitions/LineSegment"
+          }
+        },
+        "terminal_label": {
+          "type": "string",
+          "description": "The terminal this wire connects to (WIRE objects)."
+        },
+        "cable_label": {
+          "type": "string",
+          "description": "The cable this wire belongs to (WIRE objects)."
+        },
+        "left_cable_wire_detected": {
+          "type": "boolean",
+          "description": "Whether a left-side cable wire was detected (TERMINAL objects)."
+        },
+        "assigned_cable": {
+          "type": ["string", "null"],
+          "description": "Cable assigned to this terminal (TERMINAL objects)."
+        },
+        "assigned_wire_color": {
+          "type": ["string", "null"],
+          "description": "Wire color assigned to this terminal (TERMINAL objects)."
+        },
+        "jumpered_to_terminal": {
+          "type": ["string", "null"],
+          "description": "Terminal label this terminal is jumpered to (TERMINAL objects)."
+        }
+      }
+    },
+    "Connection": {
+      "type": "object",
+      "required": ["connection_id", "source_object_id", "target_object_id", "relationship_type"],
+      "properties": {
+        "connection_id": {
+          "type": "string",
+          "pattern": "^C\\d+$",
+          "description": "Unique connection identifier (e.g., C1, C2)."
+        },
+        "source_object_id": {
+          "type": "string",
+          "description": "Source object ID for this connection."
+        },
+        "target_object_id": {
+          "type": "string",
+          "description": "Target object ID for this connection."
+        },
+        "relationship_type": {
+          "type": "string",
+          "enum": ["DIRECT_WIRE", "WIRE_TO_CABLE", "CABLE_TO_CONNECTOR", "JUMPER_SHORT", "PIN_OF", "ANNOTATES"],
+          "description": "The type of relationship between source and target."
+        }
+      },
+      "additionalProperties": false
+    },
+    "PartitionMembership": {
+      "type": "object",
+      "required": ["partition_id", "member_object_id"],
+      "properties": {
+        "partition_id": {
+          "type": "string",
+          "description": "Partition identifier (e.g., TB1)."
+        },
+        "member_object_id": {
+          "type": "string",
+          "description": "Object ID that belongs to this partition."
+        }
+      },
+      "additionalProperties": false
+    },
+    "BoundingBox": {
+      "type": "object",
+      "required": ["x", "y", "width", "height"],
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "width": { "type": "number" },
+        "height": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "Point": {
+      "type": "object",
+      "required": ["x", "y"],
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "LineSegment": {
+      "type": "object",
+      "required": ["x1", "y1", "x2", "y2"],
+      "properties": {
+        "x1": { "type": "number" },
+        "y1": { "type": "number" },
+        "x2": { "type": "number" },
+        "y2": { "type": "number" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

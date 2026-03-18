@@ -1,0 +1,217 @@
+{
+  "cables": [
+    {
+      "adjacent_labels": [
+        "4C"
+      ],
+      "label": "N6000",
+      "off_page_connector": null,
+      "position": "middle-left"
+    },
+    {
+      "adjacent_labels": [
+        "4C"
+      ],
+      "label": "N7888",
+      "off_page_connector": null,
+      "position": "middle-left"
+    },
+    {
+      "adjacent_labels": [
+        "4C"
+      ],
+      "label": "N8000",
+      "off_page_connector": null,
+      "position": "middle-left"
+    }
+  ],
+  "components": [
+    {
+      "label": "N",
+      "left_side_labels": [
+        "N 8000"
+      ],
+      "position": "middle-left",
+      "right_side_terminals": [
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK"
+      ]
+    },
+    {
+      "label": "N6000",
+      "left_side_labels": [
+        "RA 500B"
+      ],
+      "position": "bottom-left",
+      "right_side_terminals": [
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK",
+        "(+) BK"
+      ]
+    },
+    {
+      "label": "N7888",
+      "left_side_labels": [
+        "RA 506B"
+      ],
+      "position": "middle-left",
+      "right_side_terminals": [
+        "(+) R",
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK"
+      ]
+    },
+    {
+      "label": "N8000",
+      "left_side_labels": [
+        "RA 530"
+      ],
+      "position": "middle-left",
+      "right_side_terminals": [
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK",
+        "(+) n"
+      ]
+    },
+    {
+      "label": "RA",
+      "left_side_labels": [
+        "RA 530"
+      ],
+      "position": "middle-left",
+      "right_side_terminals": []
+    }
+  ],
+  "has_crossovers": true,
+  "notes": "The diagram is structured with multiple components and terminals, and minimal adjacent labels are present.",
+  "other_symbols": [],
+  "partition_labels": [
+    "MOUNT ON LEFT SIDE",
+    "REAR VIEW"
+  ],
+  "terminals": [
+    {
+      "has_slider": false,
+      "label": "651",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "652",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "653",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "654",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "951",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "952",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "953",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "954",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": true,
+      "label": "955",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "956",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "957",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "958",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "959",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "960",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "961",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "962",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "963",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    },
+    {
+      "has_slider": false,
+      "label": "964",
+      "position": "middle-right",
+      "terminal_block": "TB1"
+    }
+  ],
+  "wire_labels": [
+    "B",
+    "BK",
+    "R",
+    "W",
+    "n"
+  ]
+}

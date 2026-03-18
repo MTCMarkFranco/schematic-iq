@@ -6,3 +6,5 @@ rich
 opencv-python-headless>=4.8.0
 numpy
 PyMuPDF
+jsonschema>=4.0.0
+pytest>=7.0.0
