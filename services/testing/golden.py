@@ -2,12 +2,15 @@
 Golden-output comparison helpers.
 
 Loads fixtures, normalizes JSON for stable diffing, and reports differences.
+Uses the centralized normalizer from services.postprocess.normalize.
 """
 
 import json
 import os
 from pathlib import Path
 from typing import Any
+
+from services.postprocess.normalize import normalize as _normalize
 
 
 def _stable_sort_key(item: Any) -> str:
@@ -27,23 +30,10 @@ def normalize_for_comparison(data: dict) -> dict:
     - Sorts arrays of objects by stable keys
     - Removes volatile fields (timestamps, run IDs)
     - Preserves all semantic content
-    """
-    if not isinstance(data, dict):
-        return data
 
-    result = {}
-    for key, value in sorted(data.items()):
-        if isinstance(value, list):
-            sorted_list = sorted(
-                [normalize_for_comparison(v) if isinstance(v, dict) else v for v in value],
-                key=_stable_sort_key,
-            )
-            result[key] = sorted_list
-        elif isinstance(value, dict):
-            result[key] = normalize_for_comparison(value)
-        else:
-            result[key] = value
-    return result
+    Delegates to the centralized normalizer.
+    """
+    return _normalize(data, strip_volatile=True)
 
 
 def load_golden(golden_path: str) -> dict:

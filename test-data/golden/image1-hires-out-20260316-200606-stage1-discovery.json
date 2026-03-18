@@ -26,8 +26,8 @@
     },
     {
       "adjacent_labels": [
-        "4C",
-        "RA 500B"
+        "RA 500B",
+        "4C"
       ],
       "label": "N6000",
       "off_page_connector": null,
@@ -35,8 +35,8 @@
     },
     {
       "adjacent_labels": [
-        "4C",
-        "RA 506B"
+        "RA 506B",
+        "4C"
       ],
       "label": "N7888",
       "off_page_connector": null,
@@ -44,8 +44,8 @@
     },
     {
       "adjacent_labels": [
-        "4C",
-        "RA 530"
+        "RA 530",
+        "4C"
       ],
       "label": "N8000",
       "off_page_connector": null,
