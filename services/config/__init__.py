@@ -1,0 +1,3 @@
+"""
+Schematic-IQ — Centralized configuration.
+"""
