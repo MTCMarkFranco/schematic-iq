@@ -34,6 +34,7 @@ from services.geometry_extraction_service import (
 from services.discovery_service import run_full_discovery
 from services.agent_extraction_service import run_agent_extraction
 from services.validation_service import post_process_and_validate
+from services.telemetry import get_logger, configure_logging, PipelineMetrics
 
 # ── Initialization ───────────────────────────────────────────────────────────
 load_dotenv()
@@ -61,6 +62,17 @@ def parse_arguments():
     if not os.path.isfile(image_path):
         console.print(f"[bold red]File not found:[/bold red] {image_path}")
         raise SystemExit(1)
+
+    # Configure structured logging from --log-level / --json-log flags
+    log_level = "WARNING"
+    json_log = False
+    for a in sys.argv[1:]:
+        if a.startswith("--log-level="):
+            log_level = a.split("=", 1)[1]
+        elif a == "--json-log":
+            json_log = True
+    configure_logging(level=log_level, json_output=json_log)
+
     return image_path
 
 
@@ -166,6 +178,10 @@ def run_stage_3(foundry_service, image_path, geometry, discovery, wire_map):
 def main():
     """Run the full 3-stage extraction pipeline."""
     image_path = parse_arguments()
+    log = get_logger("pipeline")
+    metrics = PipelineMetrics()
+
+    log.info("pipeline_start", image=image_path)
 
     # Load image
     with console.status("[bold yellow]Loading image\u2026", spinner="dots"):
@@ -177,15 +193,51 @@ def main():
     foundry = initialize_foundry_service()
 
     # Stage 1: OpenCV Geometry Extraction
-    geometry, wire_map, elapsed_s1 = run_stage_1(image_path)
+    with metrics.stage("stage1"):
+        geometry, wire_map, elapsed_s1 = run_stage_1(image_path)
+    summary = geometry.get("summary", {})
+    metrics.set_counts(
+        "stage1",
+        wires=summary.get("wires", 0),
+        wire_chains=summary.get("wire_chains", 0),
+        dashed_regions=summary.get("dashed_regions", 0),
+    )
+    log.info(
+        "stage1_done",
+        elapsed=round(elapsed_s1, 3),
+        **metrics.get_counts("stage1"),
+    )
 
     # Stage 2: LLM Discovery
-    discovery, wire_map, elapsed_s2 = run_stage_2(
-        foundry, image_data_b64, image_path, geometry, wire_map
+    with metrics.stage("stage2"):
+        discovery, wire_map, elapsed_s2 = run_stage_2(
+            foundry, image_data_b64, image_path, geometry, wire_map
+        )
+    metrics.set_counts(
+        "stage2",
+        components=len(discovery.get("components", [])),
+        cables=len(discovery.get("cables", [])),
+        terminals=len(discovery.get("terminals", [])),
+    )
+    log.info(
+        "stage2_done",
+        elapsed=round(elapsed_s2, 3),
+        **metrics.get_counts("stage2"),
     )
 
     # Stage 3: Agent Extraction
-    final, elapsed_s3 = run_stage_3(foundry, image_path, geometry, discovery, wire_map)
+    with metrics.stage("stage3"):
+        final, elapsed_s3 = run_stage_3(foundry, image_path, geometry, discovery, wire_map)
+    metrics.set_counts(
+        "stage3",
+        objects=len(final.get("objects", [])),
+        connections=len(final.get("connections", [])),
+    )
+    log.info(
+        "stage3_done",
+        elapsed=round(elapsed_s3, 3),
+        **metrics.get_counts("stage3"),
+    )
 
     # Summary
     total_time = elapsed_s1 + elapsed_s2 + elapsed_s3
@@ -200,6 +252,8 @@ def main():
             expand=False,
         )
     )
+
+    log.info("pipeline_done", **metrics.summary())
 
 
 if __name__ == "__main__":
