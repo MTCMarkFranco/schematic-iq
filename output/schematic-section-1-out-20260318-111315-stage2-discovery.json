@@ -2,31 +2,52 @@
   "components": [
     {
       "label": "RA",
-      "position": "top-left",
-      "left_side_labels": [],
+      "position": "middle-left",
+      "left_side_labels": [
+        "RA 530"
+      ],
       "right_side_terminals": []
     },
     {
       "label": "N",
-      "position": "top-left",
-      "left_side_labels": [],
-      "right_side_terminals": []
+      "position": "middle-left",
+      "left_side_labels": [
+        "N 8000"
+      ],
+      "right_side_terminals": [
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK"
+      ]
     },
     {
       "label": "N8000",
-      "position": "top-center",
+      "position": "middle-left",
       "left_side_labels": [
         "RA 530"
       ],
-      "right_side_terminals": []
+      "right_side_terminals": [
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK",
+        "(+) n"
+      ]
     },
     {
       "label": "N7888",
-      "position": "middle-center",
+      "position": "middle-left",
       "left_side_labels": [
         "RA 506B"
       ],
-      "right_side_terminals": []
+      "right_side_terminals": [
+        "(+) R",
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK"
+      ]
     },
     {
       "label": "N6000",
@@ -34,55 +55,37 @@
       "left_side_labels": [
         "RA 500B"
       ],
-      "right_side_terminals": []
+      "right_side_terminals": [
+        "(+) R",
+        "(+) W",
+        "(+) B",
+        "(+) BK",
+        "(+) BK"
+      ]
     }
   ],
   "cables": [
     {
-      "label": "N 8000",
-      "position": "top-left",
-      "adjacent_labels": [
-        "RA 530"
-      ],
-      "off_page_connector": null
-    },
-    {
-      "label": "N 7888",
+      "label": "N8000",
       "position": "middle-left",
       "adjacent_labels": [
-        "RA 506B"
-      ],
-      "off_page_connector": null
-    },
-    {
-      "label": "N 6000",
-      "position": "bottom-left",
-      "adjacent_labels": [
-        "RA 500B"
-      ],
-      "off_page_connector": null
-    },
-    {
-      "label": "N8000",
-      "position": "top-center",
-      "adjacent_labels": [
-        "RA 530"
+        "4C"
       ],
       "off_page_connector": null
     },
     {
       "label": "N7888",
-      "position": "middle-center",
+      "position": "middle-left",
       "adjacent_labels": [
-        "RA 506B"
+        "4C"
       ],
       "off_page_connector": null
     },
     {
       "label": "N6000",
-      "position": "bottom-left",
+      "position": "middle-left",
       "adjacent_labels": [
-        "RA 500B"
+        "4C"
       ],
       "off_page_connector": null
     }
@@ -90,25 +93,25 @@
   "terminals": [
     {
       "label": "654",
-      "position": "top-right",
+      "position": "middle-right",
       "terminal_block": "TB1",
       "has_slider": false
     },
     {
       "label": "653",
-      "position": "top-right",
+      "position": "middle-right",
       "terminal_block": "TB1",
       "has_slider": false
     },
     {
       "label": "652",
-      "position": "top-right",
+      "position": "middle-right",
       "terminal_block": "TB1",
       "has_slider": false
     },
     {
       "label": "651",
-      "position": "top-right",
+      "position": "middle-right",
       "terminal_block": "TB1",
       "has_slider": false
     },
@@ -173,12 +176,6 @@
       "has_slider": true
     },
     {
-      "label": "NC",
-      "position": "middle-right",
-      "terminal_block": "TB1",
-      "has_slider": false
-    },
-    {
       "label": "954",
       "position": "middle-right",
       "terminal_block": "TB1",
@@ -204,27 +201,17 @@
     }
   ],
   "wire_labels": [
-    "4C",
     "B",
     "BK",
     "R",
     "W",
-    "b",
-    "n",
-    "w"
+    "n"
   ],
-  "other_symbols": [
-    {
-      "text": "NC",
-      "shape": "rectangle",
-      "position": "middle-right"
-    }
-  ],
+  "other_symbols": [],
   "partition_labels": [
     "MOUNT ON LEFT SIDE",
-    "REAR VIEW",
-    "TB1"
+    "REAR VIEW"
   ],
   "has_crossovers": true,
-  "notes": "All components and terminals are clearly visible, with no observed crossovers."
+  "notes": "The diagram is structured with multiple components and terminals, and minimal adjacent labels are present."
 }

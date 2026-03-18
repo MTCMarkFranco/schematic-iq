@@ -175,6 +175,68 @@ cp .env.example .env
 python main.py path/to/schematic.png
 ```
 
+### Running the Pipeline
+
+```bash
+python main.py <image_file> [options]
+```
+
+| Option | Description |
+|--------|-------------|
+| `<image_file>` | Path to the schematic image (PNG, JPG) or PDF |
+| `--log-level=LEVEL` | Logging verbosity: `DEBUG`, `INFO`, `WARNING` (default), `ERROR` |
+| `--json-log` | Emit structured JSON logs instead of human-readable output |
+| `--pipeline-mode=MODE` | Pipeline execution mode (see [Pipeline Modes](docs/pipeline_modes.md)) |
+
+**Output files** are written to `output/` with the naming convention:
+
+```
+<image-name>-out-<YYYYMMDD>-<HHMMSS>-<stage>.json
+```
+
+For example, running `python main.py schematic-section-1.png` produces:
+
+```
+output/schematic-section-1-out-20260318-111315-stage1-geometry.json
+output/schematic-section-1-out-20260318-111315-stage2-discovery.json
+output/schematic-section-1-out-20260318-111315-stage3-final.json
+```
+
+Each run gets a unique timestamp, so previous outputs are never overwritten.
+
+### Regression Testing
+
+The regression runner compares pipeline outputs against golden (expected) files. It matches files by **fixture name + stage**, and when multiple timestamped outputs exist for the same fixture, it automatically uses the latest one.
+
+```bash
+# Run the smoke regression suite (compares output/ vs test-data/golden/)
+python scripts/run_regression.py --suite smoke
+
+# Strict mode — require exact match after normalization
+python scripts/run_regression.py --suite smoke --strict
+
+# Target a single fixture by name
+python scripts/run_regression.py --suite smoke --fixture schematic-section-1
+
+# Update golden files from current outputs (bootstrapping)
+python scripts/run_regression.py --update-golden
+```
+
+| Option | Description |
+|--------|-------------|
+| `--suite {smoke}` | Test suite to run (default: `smoke`) |
+| `--strict` | Require byte-for-byte match after normalization. Without this flag, only structural differences (missing/extra keys, type mismatches) cause failures; value-level diffs are reported as warnings. |
+| `--fixture NAME` | Only compare outputs for this fixture name (e.g., `schematic-section-1`). Omit to compare all fixtures. |
+| `--update-golden` | Copy all current `output/*.json` files into `test-data/golden/` as the new expected baselines. Run this after a verified-correct pipeline run. |
+| `--log-level LEVEL` | Logging verbosity: `debug`, `info`, `warning` (default), `error` |
+
+**Typical workflow:**
+
+1. Run the pipeline: `python main.py my-schematic.png`
+2. Verify the output is correct (inspect `output/*-stage3-final.json`)
+3. Promote to golden: `python scripts/run_regression.py --update-golden`
+4. After future changes, run regression: `python scripts/run_regression.py --suite smoke`
+
 ### 📦 Requirements
 
 | Package | Purpose |

@@ -12,6 +12,7 @@ Usage:
 import argparse
 import json
 import os
+import re
 import sys
 
 # Add project root to path
@@ -25,37 +26,77 @@ from services.testing.golden import (
 )
 from services.testing.snapshot import update_golden_from_output
 
-
 GOLDEN_DIR = os.path.join("test-data", "golden")
 OUTPUT_DIR = "output"
 
+# Matches: <fixture>-out-<YYYYMMDD>-<HHMMSS>-<stage>.json
+_FILENAME_RE = re.compile(
+    r"^(?P<fixture>.+?)-out-(?P<ts>\d{8}-\d{6})-(?P<stage>stage\d+-\w+)\.json$"
+)
 
-def find_golden_pairs() -> list[tuple[str, str]]:
-    """Find pairs of (output_file, golden_file) for comparison."""
+STAGES = (
+    "stage0-geometry", "stage1-geometry",
+    "stage1-discovery", "stage2-discovery",
+    "stage2-agent", "stage3-final",
+)
+
+
+def _parse_filename(name: str) -> tuple[str, str, str] | None:
+    """Parse a pipeline output filename into (fixture, timestamp, stage)."""
+    m = _FILENAME_RE.match(name)
+    if m:
+        return m.group("fixture"), m.group("ts"), m.group("stage")
+    return None
+
+
+def find_golden_pairs(fixture_filter: str | None = None) -> list[tuple[str, str]]:
+    """Find pairs of (output_file, golden_file) for comparison.
+
+    Matches by fixture name + stage.  When multiple output timestamps
+    exist for the same fixture+stage, the latest one is used.
+
+    Args:
+        fixture_filter: If provided, only include this fixture name.
+    """
     pairs = []
     if not os.path.isdir(GOLDEN_DIR):
         return pairs
 
-    golden_files = {f for f in os.listdir(GOLDEN_DIR) if f.endswith(".json")}
-    output_files = {f for f in os.listdir(OUTPUT_DIR) if f.endswith(".json")}
+    # Index golden files by (fixture, stage)
+    golden_by_key: dict[tuple[str, str], str] = {}
+    for name in os.listdir(GOLDEN_DIR):
+        parsed = _parse_filename(name)
+        if parsed:
+            fixture, _ts, stage = parsed
+            golden_by_key[(fixture, stage)] = name
 
-    # Match golden files to any output file with the same stage suffix
-    for golden_name in sorted(golden_files):
-        # Golden files are named like: <fixture>-<stage>.json
-        # Find matching output files by stage suffix
-        for output_name in sorted(output_files):
-            # Match by stage suffix (stage1-geometry, stage2-discovery, stage3-final)
-            for stage in ("stage1-geometry", "stage2-discovery", "stage3-final",
-                          "stage0-geometry", "stage1-discovery", "stage2-agent"):
-                if golden_name.endswith(f"{stage}.json") and output_name.endswith(f"{stage}.json"):
-                    pairs.append((
-                        os.path.join(OUTPUT_DIR, output_name),
-                        os.path.join(GOLDEN_DIR, golden_name),
-                    ))
+    # Index output files by (fixture, stage), keeping latest timestamp
+    output_by_key: dict[tuple[str, str], str] = {}
+    for name in os.listdir(OUTPUT_DIR):
+        parsed = _parse_filename(name)
+        if parsed:
+            fixture, ts, stage = parsed
+            key = (fixture, stage)
+            existing = output_by_key.get(key)
+            if existing is None or ts > _parse_filename(existing)[1]:
+                output_by_key[key] = name
+
+    # Build pairs where fixture+stage match
+    for key in sorted(golden_by_key):
+        fixture, stage = key
+        if fixture_filter and fixture != fixture_filter:
+            continue
+        if key in output_by_key:
+            pairs.append((
+                os.path.join(OUTPUT_DIR, output_by_key[key]),
+                os.path.join(GOLDEN_DIR, golden_by_key[key]),
+            ))
+
     return pairs
 
 
-def run_smoke_suite(strict: bool = False, log_level: str = "warning") -> bool:
+def run_smoke_suite(strict: bool = False, log_level: str = "warning",
+                    fixture_filter: str | None = None) -> bool:
     """Run the smoke regression suite.
 
     Compares existing output files against golden files.
@@ -64,11 +105,12 @@ def run_smoke_suite(strict: bool = False, log_level: str = "warning") -> bool:
     Args:
         strict: If True, require byte-for-byte match after normalization.
         log_level: Logging verbosity.
+        fixture_filter: If provided, only compare this fixture.
 
     Returns:
         True if all comparisons pass.
     """
-    pairs = find_golden_pairs()
+    pairs = find_golden_pairs(fixture_filter=fixture_filter)
 
     if not pairs:
         print("⚠  No golden/output pairs found.")
@@ -147,6 +189,11 @@ Examples:
         help="Update golden files from current output directory",
     )
     parser.add_argument(
+        "--fixture",
+        default=None,
+        help="Only compare this fixture name (e.g. 'schematic-section-1')",
+    )
+    parser.add_argument(
         "--log-level",
         default="warning",
         choices=["debug", "info", "warning", "error"],
@@ -165,7 +212,8 @@ Examples:
 
     print(f"═══ Schematic-IQ Regression Suite: {args.suite} ═══\n")
 
-    passed = run_smoke_suite(strict=args.strict, log_level=args.log_level)
+    passed = run_smoke_suite(strict=args.strict, log_level=args.log_level,
+                              fixture_filter=args.fixture)
 
     print()
     if passed:
