@@ -33,9 +33,9 @@ This agentic approach, guided by pre-computed geometry and a discovery inventory
 ```
 ┌───────────────────────────────────────────────────────────────────────────────┐
 │                                                                               │
-│   📐 STAGE 1            🔍 STAGE 2              🤖 STAGE 3                   │
-│   OpenCV Geometry    →   LLM Discovery       →   Agentic Extraction          │
-│   (~1s)                  (~8s, gpt-4o-mini)      (~5min, gpt-5.4-pro + CI)   │
+│   📐 STAGE 1            🔍 STAGE 2              🤖 STAGE 3                👨🏿‍🚀│
+│   OpenCV Geometry    →   LLM Discovery       →   Agentic Extraction           │
+│   (~1s)                  (~45s, gpt-4o-mini)      (~14min, gpt-5.4-pro + CI)  │
 │                                                                               │
 │   Wire masks             Component inventory     Agent writes & executes      │
 │   Hough line detect      Cable/terminal map      custom OpenCV code per       │
