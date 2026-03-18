@@ -1,0 +1,345 @@
+{
+  "image_size": {
+    "width": 794,
+    "height": 827
+  },
+  "scale": 1.0,
+  "summary": {
+    "wires": 29,
+    "wire_chains": 1,
+    "dashed_regions": 5,
+    "slider_terminals": 0
+  },
+  "wires": [
+    {
+      "x1": 310,
+      "y1": 21,
+      "x2": 373,
+      "y2": 21,
+      "length": 63.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 434,
+      "y1": 21,
+      "x2": 516,
+      "y2": 21,
+      "length": 82.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 134,
+      "x2": 372,
+      "y2": 134,
+      "length": 62.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 162,
+      "x2": 374,
+      "y2": 162,
+      "length": 64.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 218,
+      "x2": 372,
+      "y2": 218,
+      "length": 62.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 245,
+      "x2": 514,
+      "y2": 245,
+      "length": 204.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 301,
+      "x2": 387,
+      "y2": 301,
+      "length": 77.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 420,
+      "y1": 301,
+      "x2": 514,
+      "y2": 301,
+      "length": 94.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 329,
+      "x2": 514,
+      "y2": 329,
+      "length": 204.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 311,
+      "y1": 442,
+      "x2": 373,
+      "y2": 442,
+      "length": 62.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 470,
+      "x2": 391,
+      "y2": 470,
+      "length": 81.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 415,
+      "y1": 470,
+      "x2": 516,
+      "y2": 470,
+      "length": 101.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 498,
+      "x2": 516,
+      "y2": 498,
+      "length": 206.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 526,
+      "x2": 516,
+      "y2": 526,
+      "length": 206.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 554,
+      "x2": 387,
+      "y2": 554,
+      "length": 77.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 420,
+      "y1": 554,
+      "x2": 610,
+      "y2": 554,
+      "length": 190.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 610,
+      "x2": 481,
+      "y2": 610,
+      "length": 171.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 638,
+      "x2": 387,
+      "y2": 638,
+      "length": 77.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 420,
+      "y1": 638,
+      "x2": 481,
+      "y2": 638,
+      "length": 61.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 666,
+      "x2": 481,
+      "y2": 666,
+      "length": 171.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 694,
+      "x2": 391,
+      "y2": 694,
+      "length": 81.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 416,
+      "y1": 694,
+      "x2": 480,
+      "y2": 694,
+      "length": 64.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 723,
+      "x2": 480,
+      "y2": 723,
+      "length": 170.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 750,
+      "x2": 479,
+      "y2": 750,
+      "length": 169.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 310,
+      "y1": 778,
+      "x2": 386,
+      "y2": 778,
+      "length": 76.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 420,
+      "y1": 778,
+      "x2": 610,
+      "y2": 778,
+      "length": 190.0,
+      "angle": 0.0,
+      "orientation": "horizontal"
+    },
+    {
+      "x1": 306,
+      "y1": 0,
+      "x2": 306,
+      "y2": 826,
+      "length": 826.0,
+      "angle": 90.0,
+      "orientation": "vertical"
+    },
+    {
+      "x1": 485,
+      "y1": 142,
+      "x2": 485,
+      "y2": 780,
+      "length": 638.0,
+      "angle": 90.0,
+      "orientation": "vertical"
+    },
+    {
+      "x1": 519,
+      "y1": 28,
+      "x2": 519,
+      "y2": 556,
+      "length": 528.0,
+      "angle": 90.0,
+      "orientation": "vertical"
+    }
+  ],
+  "wire_chains": [
+    {
+      "chain_id": 0,
+      "wire_indices": [
+        0,
+        26,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        16,
+        17,
+        19,
+        20,
+        22,
+        23,
+        24,
+        28,
+        27,
+        1,
+        7,
+        11,
+        15,
+        18,
+        21,
+        25
+      ]
+    }
+  ],
+  "dashed_regions": [
+    {
+      "x": 421,
+      "y": 779,
+      "width": 189,
+      "height": 1
+    },
+    {
+      "x": 413,
+      "y": 143,
+      "width": 197,
+      "height": 632
+    },
+    {
+      "x": 520,
+      "y": 29,
+      "width": 1,
+      "height": 518
+    },
+    {
+      "x": 435,
+      "y": 22,
+      "width": 81,
+      "height": 1
+    },
+    {
+      "x": 240,
+      "y": 0,
+      "width": 155,
+      "height": 827
+    }
+  ],
+  "slider_rects": []
+}

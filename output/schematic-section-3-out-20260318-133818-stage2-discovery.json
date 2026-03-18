@@ -1,0 +1,211 @@
+{
+  "components": [],
+  "cables": [
+    {
+      "label": "N 1609",
+      "position": "bottom-right",
+      "adjacent_labels": [
+        "12C"
+      ],
+      "off_page_connector": "2"
+    },
+    {
+      "label": "N 2364",
+      "position": "bottom-right",
+      "adjacent_labels": [
+        "16C"
+      ],
+      "off_page_connector": null
+    }
+  ],
+  "terminals": [
+    {
+      "label": "52",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "51",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "50",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "49",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "48",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "47",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "46",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "45",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "44",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "43",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "42",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "41",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "40",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "39",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "38",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "37",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "36",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "35",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "34",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "33",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "32",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "31",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "30",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "29",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "28",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "27",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "26",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    },
+    {
+      "label": "25",
+      "position": "middle-left",
+      "terminal_block": "TB1",
+      "has_slider": false
+    }
+  ],
+  "wire_labels": [
+    "B",
+    "BK",
+    "BK/W",
+    "BR",
+    "G/BK",
+    "G/W",
+    "O",
+    "R",
+    "R/BK",
+    "R/W",
+    "W",
+    "Y",
+    "Y/BK",
+    "Y/W"
+  ],
+  "other_symbols": [],
+  "partition_labels": [],
+  "has_crossovers": true,
+  "notes": "The diagram contains multiple terminals and cable intersections, indicating potential wire crossings."
+}
